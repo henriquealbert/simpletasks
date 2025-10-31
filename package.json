@@ -22,7 +22,7 @@
     "modern": true
   },
   "dependencies": {
-    "@babel/runtime": "^7.24.8",
+    "@babel/runtime": "^7.28.4",
     "@chakra-ui/icons": "^2.1.1",
     "@chakra-ui/react": "^2.10.9",
     "@emotion/react": "^11.14.0",
@@ -33,17 +33,17 @@
     "bcrypt": "^5.1.1",
     "framer-motion": "^6.5.1",
     "history": "^5.3.0",
-    "meteor-node-stubs": "^1.2.9",
+    "meteor-node-stubs": "^1.2.24",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
-    "react-hook-form": "^7.52.1",
+    "react-hook-form": "^7.65.0",
     "react-router-dom": "^6.25.1",
-    "zod": "^3.23.8"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@meteorjs/rspack": "^0.0.46",
+    "@meteorjs/rspack": "^0.0.60",
     "@playwright/test": "^1.52.0",
     "@rsdoctor/rspack-plugin": "^1.2.3",
     "@rspack/cli": "^1.5.3",
@@ -66,12 +66,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "biome check --files-ignore-unknown=true",
-      "biome check --write --no-errors-on-unmatched",
-      "biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
-      "biome check --write --unsafe --no-errors-on-unmatched",
-      "biome format --write --no-errors-on-unmatched",
-      "biome lint --write --no-errors-on-unmatched"
+      "biome check --write --unsafe --no-errors-on-unmatched"
     ]
   }
 }
